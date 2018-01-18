@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize = document.documentElement.clientWidth/16 + 'px';    		
+    </script>
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <style>
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	ul li{
+    		list-style: none;
+    	}
+    	html,body{
+    		width: 100%;
+    		height: 100%;
+    	}
+    	.box{    		
+    		width: 100%;
+    		height: 100%;
+    		background: red;
+    		display: flex;
+    		flex-direction: column;
+    	}
+    	.header{
+    		width: 100%;
+    		height: 2.048rem;
+    		background: #ff5000;
+    		display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+    	}
+    	.header>.sao{
+    		width: 2.048rem;
+    		height: 100%;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;
+    		color: #fff;
+    	}
+    	.header>.sao>i{
+    		font-size: 1rem;
+    	}
+    	.header>.sao>span{
+    		font-size: 0.384rem;
+    	}
+    	.header>.search{
+    		width: 10.368rem;
+    		height: 1.37rem;
+    		flex: 1;
+    		background: #d42d00; 
+    		border-radius: 5px;
+    		display: flex;
+    		box-sizing: border-box;
+    		padding: 0px 10px;
+    		align-items: center;
+    	}
+    	.header>.search>input{
+    		flex: 1;
+    		height: 100%;
+    		background: none;
+    		border: none;
+    		outline: none;
+    		color: #fff;
+    		font-size: 0.584rem;
+    	}
+    	.header>.search>i{
+    		color: #fff;
+    	}
+    	.header>.info{
+    		width: 2.048rem;
+    		height: 100%;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;
+    		color: #fff;
+    	}
+    	.header>.info>i{
+    		font-size: 1rem;
+    	}
+    	.header>.info>span{
+    		font-size: 0.384rem;
+    	}
+    	.content{
+    		flex: 1;   /* 剩余的空间分  */
+    		width: 100%;
+    		height: 100%;
+    		overflow: auto;
+    	}
+    	.content_main{
+    		width: 100%;
+    		
+    	}
+    	.content_main img{
+    		width: 100%;
+    	}
+    	.footer{
+    		width: 100%;
+    		height: 1.71rem;
+    		background: blue;
+    	}
+    	
+    </style>
+</head>
+<body>
+	<div class="box">
+		<header class="header">
+			<div class="sao">
+				<i class="iconfont icon-saoyisao1"></i>
+				<span>扫一扫</span>
+			</div>
+			<div class="search">
+				<i class="iconfont icon-sousuo"></i>
+				<input value="星巴克咖啡" />
+				<i class="iconfont icon-camera2"></i>
+			</div>
+			<div class="info">
+				<i class="iconfont icon-xiaoxi"></i>
+				<span>消息</span>
+			</div>
+		</header>
+		<section class="content">
+			<section class="content_main">
+				<ul>
+					<li><img src="img/19.jpg" alt="" /></li>
+					<li><img src="img/20.jpg" alt="" /></li>
+					<li><img src="img/21.jpg" alt="" /></li>
+					<li><img src="img/22.jpg" alt="" /></li>
+				</ul>
+			</section>
+		</section>
+		
+		<footer class="footer">底部</footer>
+	</div>
+</body>
+</html>
